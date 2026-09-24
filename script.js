@@ -10,9 +10,9 @@ function convertToRoman(num) {
     };
 
   //your code here
-	let result=" ";
+	let result="";
 	for(let i=0;i<obj.length;i++){
-		while(num>obj[i][1]){
+		while(num>=obj[i][1]){
 			result+=obj[i][0];
 			num-=obj[i][1];
 		}
